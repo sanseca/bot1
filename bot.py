@@ -27,4 +27,21 @@ async def suma(ctx, num1:int,num2:int):
     resultado=num1+num2
     await ctx.send(resultado)
 
+@bot.command()
+async def resta(ctx, num1:int,num2:int):
+    resultado=num1-num2
+    await ctx.send(resultado)
+
+
+@bot.command()
+async def multiplica(ctx, num1:int,num2:int):
+    resultado=num1*num2
+    await ctx.send(resultado)
+
+@bot.command()
+async def divide(ctx, num1:int,num2:int):
+    resultado=num1/num2
+    await ctx.send(resultado)
+
+
 bot.run("token")
